@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Painters Renovation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="preloader"></div> <!-- Preloader animation -->
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Professional Painting & Renovation Services</h1>
+            <p>High-quality painting, drywall installation, and more</p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+    </header>
+
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-box">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Painting</h3>
+                <p>Professional wall and ceiling painting services.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-tools"></i>
+                <h3>Drywall Installation</h3>
+                <p>Expert drywall framing and installation.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-th-large"></i>
+                <h3>Tiling & Flooring</h3>
+                <p>High-quality tile, vinyl, and laminate installation.</p>
+            </div>
+        </div>
+        <a href="services.html" class="btn">View All Services</a>
+    </section>
+
+    <section class="calculator">
+        <h2>Estimate Your Renovation Cost</h2>
+        <label for="material">Choose Material:</label>
+        <select id="material">
+            <option value="10">Standard Paint - $10/sq.ft</option>
+            <option value="15">Premium Paint - $15/sq.ft</option>
+            <option value="20">Drywall Installation - $20/sq.ft</option>
+        </select>
+        <input type="number" id="area" placeholder="Enter area in sq.ft">
+        <button onclick="calculateCost()">Calculate</button>
+        <p id="cost-result"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Pro Painters Renovation | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
